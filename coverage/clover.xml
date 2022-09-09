@@ -1,43 +1,44 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<coverage generated="1662688570004" clover="3.2.0">
-  <project timestamp="1662688570004" name="All files">
-    <metrics statements="31" coveredstatements="31" conditionals="17" coveredconditionals="17" methods="6" coveredmethods="6" elements="54" coveredelements="54" complexity="0" loc="31" ncloc="31" packages="1" files="2" classes="2"/>
+<coverage generated="1662688719570" clover="3.2.0">
+  <project timestamp="1662688719570" name="All files">
+    <metrics statements="32" coveredstatements="32" conditionals="17" coveredconditionals="17" methods="6" coveredmethods="6" elements="55" coveredelements="55" complexity="0" loc="32" ncloc="32" packages="1" files="2" classes="2"/>
     <file name="CellsManipulator.ts" path="C:\Users\nirie\Desktop\Dev\minesweeper\src\helpers\CellsManipulator.ts">
       <metrics statements="13" coveredstatements="13" conditionals="8" coveredconditionals="8" methods="3" coveredmethods="3"/>
-      <line num="3" count="1" type="stmt"/>
-      <line num="6" count="9" type="stmt"/>
-      <line num="17" count="1" type="stmt"/>
-      <line num="18" count="63" type="cond" truecount="4" falsecount="0"/>
-      <line num="20" count="1" type="stmt"/>
-      <line num="21" count="7" type="stmt"/>
-      <line num="23" count="7" type="stmt"/>
-      <line num="24" count="56" type="cond" truecount="2" falsecount="0"/>
-      <line num="25" count="38" type="stmt"/>
-      <line num="26" count="38" type="stmt"/>
-      <line num="27" count="38" type="cond" truecount="2" falsecount="0"/>
-      <line num="28" count="34" type="stmt"/>
-      <line num="34" count="7" type="stmt"/>
+      <line num="3" count="2" type="stmt"/>
+      <line num="6" count="16" type="stmt"/>
+      <line num="17" count="2" type="stmt"/>
+      <line num="18" count="119" type="cond" truecount="4" falsecount="0"/>
+      <line num="20" count="2" type="stmt"/>
+      <line num="21" count="14" type="stmt"/>
+      <line num="23" count="14" type="stmt"/>
+      <line num="24" count="112" type="cond" truecount="2" falsecount="0"/>
+      <line num="25" count="56" type="stmt"/>
+      <line num="26" count="56" type="stmt"/>
+      <line num="27" count="56" type="cond" truecount="2" falsecount="0"/>
+      <line num="28" count="45" type="stmt"/>
+      <line num="34" count="14" type="stmt"/>
     </file>
     <file name="Field.ts" path="C:\Users\nirie\Desktop\Dev\minesweeper\src\helpers\Field.ts">
-      <metrics statements="18" coveredstatements="18" conditionals="9" coveredconditionals="9" methods="3" coveredmethods="3"/>
-      <line num="5" count="2" type="stmt"/>
-      <line num="13" count="2" type="stmt"/>
-      <line num="16" count="21" type="stmt"/>
-      <line num="18" count="2" type="stmt"/>
-      <line num="21" count="7" type="cond" truecount="4" falsecount="0"/>
-      <line num="22" count="2" type="stmt"/>
-      <line num="25" count="5" type="stmt"/>
-      <line num="26" count="5" type="stmt"/>
+      <metrics statements="19" coveredstatements="19" conditionals="9" coveredconditionals="9" methods="3" coveredmethods="3"/>
+      <line num="7" count="2" type="stmt"/>
+      <line num="15" count="2" type="stmt"/>
+      <line num="18" count="21" type="stmt"/>
+      <line num="20" count="2" type="stmt"/>
+      <line num="23" count="7" type="cond" truecount="4" falsecount="0"/>
+      <line num="24" count="2" type="stmt"/>
+      <line num="27" count="5" type="stmt"/>
       <line num="28" count="5" type="stmt"/>
       <line num="30" count="5" type="stmt"/>
-      <line num="31" count="7" type="stmt"/>
-      <line num="32" count="11" type="cond" truecount="2" falsecount="0"/>
-      <line num="33" count="3" type="stmt"/>
-      <line num="35" count="8" type="cond" truecount="2" falsecount="0"/>
-      <line num="36" count="7" type="stmt"/>
-      <line num="37" count="7" type="stmt"/>
-      <line num="39" count="8" type="stmt"/>
-      <line num="43" count="2" type="stmt"/>
+      <line num="32" count="5" type="stmt"/>
+      <line num="33" count="7" type="stmt"/>
+      <line num="34" count="11" type="cond" truecount="2" falsecount="0"/>
+      <line num="35" count="2" type="stmt"/>
+      <line num="37" count="9" type="cond" truecount="2" falsecount="0"/>
+      <line num="38" count="7" type="stmt"/>
+      <line num="39" count="7" type="stmt"/>
+      <line num="40" count="7" type="stmt"/>
+      <line num="42" count="9" type="stmt"/>
+      <line num="46" count="3" type="stmt"/>
     </file>
   </project>
 </coverage>
