@@ -13,5 +13,12 @@ module.exports = {
     sourceType: 'module',
   },
   plugins: ['react', '@typescript-eslint', 'prettier'],
-  rules: {},
+  rules: {
+    indent: ['error', 2],
+    'prettier/prettier': [
+      {
+        usePrettierrc: true,
+      },
+    ],
+  },
 };
