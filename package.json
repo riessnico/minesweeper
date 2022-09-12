@@ -8,17 +8,20 @@
     "buid:dev": "webpack --mode=development",
     "build:prod": "webpack --mode=production --node-env=production",
     "watch": "webpack --watch --mode=development",
-    "serve": "webpack serve --mode=development",
+    "start": "webpack serve --mode=development",
     "test": "jest",
     "storybook": "start-storybook -p 6006",
     "build-storybook": "build-storybook",
-    "lint": "npx eslint ./ --ext .js,.jsx,.ts,.tsx -- ignore-path .gitignore --fix"
+    "lint": "npx eslint ./ --ext .js,.jsx,.ts,.tsx -- ignore-path .gitignore --fix",
+    "chromatic": "npx chromatic --project-token=6e189bac8b6e"
   },
   "repository": {
     "type": "git",
     "url": "git+https://github.com/riessnico/minesweeper.git"
   },
-  "author": "Nicolau Riess",
+  "author": {
+    "name": "Nicolau Riess"
+  },
   "license": "MIT",
   "bugs": {
     "url": "https://github.com/riessnico/minesweeper/issues"
@@ -69,5 +72,7 @@
     "@emotion/styled": "^11.10.4",
     "react": "^18.2.0",
     "react-dom": "^18.2.0"
-  }
+  },
+  "readme": "ERROR: No README data found!",
+  "_id": "minesweeper@1.0.0"
 }
