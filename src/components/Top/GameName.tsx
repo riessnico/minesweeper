@@ -1,6 +1,9 @@
 import styled from '@emotion/styled';
 
 export interface GameNameProps {
+  /**
+   * Text inside header
+   */
   children: string;
 }
 
