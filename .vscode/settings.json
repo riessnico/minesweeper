@@ -2,9 +2,7 @@
     "typescript.tsdk": "node_modules/typescript/lib",
     "prettier.configPath": ".prettierrc",
     "editor.defaultFormatter": "esbenp.prettier-vscode",
-    "editor.formatOnSave": false,
+    "editor.formatOnSave": true,
+    "editor.tabSize": 2,
     "editor.insertSpaces": false,
-    "editor.codeActionsOnSave": {
-        "source.fixAll.eslint": true
-    },
 }
