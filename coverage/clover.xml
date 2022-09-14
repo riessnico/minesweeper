@@ -1,44 +1,59 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<coverage generated="1662688719570" clover="3.2.0">
-  <project timestamp="1662688719570" name="All files">
-    <metrics statements="32" coveredstatements="32" conditionals="17" coveredconditionals="17" methods="6" coveredmethods="6" elements="55" coveredelements="55" complexity="0" loc="32" ncloc="32" packages="1" files="2" classes="2"/>
-    <file name="CellsManipulator.ts" path="C:\Users\nirie\Desktop\Dev\minesweeper\src\helpers\CellsManipulator.ts">
-      <metrics statements="13" coveredstatements="13" conditionals="8" coveredconditionals="8" methods="3" coveredmethods="3"/>
-      <line num="3" count="2" type="stmt"/>
-      <line num="6" count="16" type="stmt"/>
-      <line num="17" count="2" type="stmt"/>
-      <line num="18" count="119" type="cond" truecount="4" falsecount="0"/>
-      <line num="20" count="2" type="stmt"/>
-      <line num="21" count="14" type="stmt"/>
-      <line num="23" count="14" type="stmt"/>
-      <line num="24" count="112" type="cond" truecount="2" falsecount="0"/>
-      <line num="25" count="56" type="stmt"/>
-      <line num="26" count="56" type="stmt"/>
-      <line num="27" count="56" type="cond" truecount="2" falsecount="0"/>
-      <line num="28" count="45" type="stmt"/>
-      <line num="34" count="14" type="stmt"/>
-    </file>
-    <file name="Field.ts" path="C:\Users\nirie\Desktop\Dev\minesweeper\src\helpers\Field.ts">
-      <metrics statements="19" coveredstatements="19" conditionals="9" coveredconditionals="9" methods="3" coveredmethods="3"/>
-      <line num="7" count="2" type="stmt"/>
-      <line num="15" count="2" type="stmt"/>
-      <line num="18" count="21" type="stmt"/>
-      <line num="20" count="2" type="stmt"/>
-      <line num="23" count="7" type="cond" truecount="4" falsecount="0"/>
-      <line num="24" count="2" type="stmt"/>
-      <line num="27" count="5" type="stmt"/>
-      <line num="28" count="5" type="stmt"/>
-      <line num="30" count="5" type="stmt"/>
-      <line num="32" count="5" type="stmt"/>
-      <line num="33" count="7" type="stmt"/>
-      <line num="34" count="11" type="cond" truecount="2" falsecount="0"/>
-      <line num="35" count="2" type="stmt"/>
-      <line num="37" count="9" type="cond" truecount="2" falsecount="0"/>
-      <line num="38" count="7" type="stmt"/>
-      <line num="39" count="7" type="stmt"/>
-      <line num="40" count="7" type="stmt"/>
-      <line num="42" count="9" type="stmt"/>
-      <line num="46" count="3" type="stmt"/>
-    </file>
+<coverage generated="1663168508836" clover="3.2.0">
+  <project timestamp="1663168508836" name="All files">
+    <metrics statements="38" coveredstatements="38" conditionals="19" coveredconditionals="18" methods="9" coveredmethods="7" elements="66" coveredelements="63" complexity="0" loc="38" ncloc="38" packages="2" files="3" classes="3"/>
+    <package name="components.Scoreboard">
+      <metrics statements="6" coveredstatements="6" conditionals="2" coveredconditionals="1" methods="3" coveredmethods="1"/>
+      <file name="Reset.tsx" path="C:\Users\nirie\Desktop\Dev\minesweeper\src\components\Scoreboard\Reset.tsx">
+        <metrics statements="6" coveredstatements="6" conditionals="2" coveredconditionals="1" methods="3" coveredmethods="1"/>
+        <line num="11" count="1" type="stmt"/>
+        <line num="12" count="1" type="stmt"/>
+        <line num="14" count="1" type="stmt"/>
+        <line num="15" count="1" type="stmt"/>
+        <line num="17" count="1" type="stmt"/>
+        <line num="29" count="1" type="stmt"/>
+      </file>
+    </package>
+    <package name="helpers">
+      <metrics statements="32" coveredstatements="32" conditionals="17" coveredconditionals="17" methods="6" coveredmethods="6"/>
+      <file name="CellsManipulator.ts" path="C:\Users\nirie\Desktop\Dev\minesweeper\src\helpers\CellsManipulator.ts">
+        <metrics statements="13" coveredstatements="13" conditionals="8" coveredconditionals="8" methods="3" coveredmethods="3"/>
+        <line num="3" count="2" type="stmt"/>
+        <line num="6" count="41" type="stmt"/>
+        <line num="17" count="2" type="stmt"/>
+        <line num="18" count="319" type="cond" truecount="4" falsecount="0"/>
+        <line num="20" count="2" type="stmt"/>
+        <line num="21" count="39" type="stmt"/>
+        <line num="23" count="39" type="stmt"/>
+        <line num="24" count="312" type="cond" truecount="2" falsecount="0"/>
+        <line num="25" count="224" type="stmt"/>
+        <line num="26" count="224" type="stmt"/>
+        <line num="27" count="224" type="cond" truecount="2" falsecount="0"/>
+        <line num="28" count="186" type="stmt"/>
+        <line num="34" count="39" type="stmt"/>
+      </file>
+      <file name="Field.ts" path="C:\Users\nirie\Desktop\Dev\minesweeper\src\helpers\Field.ts">
+        <metrics statements="19" coveredstatements="19" conditionals="9" coveredconditionals="9" methods="3" coveredmethods="3"/>
+        <line num="7" count="2" type="stmt"/>
+        <line num="15" count="2" type="stmt"/>
+        <line num="18" count="31" type="stmt"/>
+        <line num="20" count="2" type="stmt"/>
+        <line num="21" count="8" type="cond" truecount="4" falsecount="0"/>
+        <line num="22" count="2" type="stmt"/>
+        <line num="25" count="6" type="stmt"/>
+        <line num="26" count="6" type="stmt"/>
+        <line num="28" count="6" type="stmt"/>
+        <line num="30" count="6" type="stmt"/>
+        <line num="31" count="17" type="stmt"/>
+        <line num="32" count="110" type="cond" truecount="2" falsecount="0"/>
+        <line num="33" count="3" type="stmt"/>
+        <line num="35" count="107" type="cond" truecount="2" falsecount="0"/>
+        <line num="36" count="32" type="stmt"/>
+        <line num="37" count="32" type="stmt"/>
+        <line num="38" count="32" type="stmt"/>
+        <line num="40" count="107" type="stmt"/>
+        <line num="44" count="3" type="stmt"/>
+      </file>
+    </package>
   </project>
 </coverage>
