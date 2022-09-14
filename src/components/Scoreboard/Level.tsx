@@ -20,7 +20,6 @@ export const Level: FC<LevelProps> = memo(({ children }) => (
 
 const Select = styled.select`
   margin: 0;
-  height: 100%;
   border-radius: 0;
   border: 0.15vw solid;
   border-color: white #9e9e9e #9e9e9e white;
