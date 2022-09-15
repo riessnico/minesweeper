@@ -1,3 +1,5 @@
+const custom = require('../webpack.config.js')
+
 module.exports = {
   "stories": [
     "../src/**/*.stories.mdx",
@@ -15,4 +17,13 @@ module.exports = {
   reactOptions: {
     fastRefresh: true,
   },
+  webpackFinal: (config) => ({
+    ...config,
+    resolve: {
+      ...config.resolve,
+      alias: {
+        ...config.resolve.alias, ...custom.resolve.alias
+      }
+    }
+  })
 }
