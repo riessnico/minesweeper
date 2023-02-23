@@ -1,6 +1,6 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<coverage generated="1677183380447" clover="3.2.0">
-  <project timestamp="1677183380447" name="All files">
+<coverage generated="1677183803258" clover="3.2.0">
+  <project timestamp="1677183803258" name="All files">
     <metrics statements="96" coveredstatements="96" conditionals="30" coveredconditionals="30" methods="27" coveredmethods="27" elements="153" coveredelements="153" complexity="0" loc="96" ncloc="96" packages="5" files="12" classes="12"/>
     <package name="components.Grid">
       <metrics statements="36" coveredstatements="36" conditionals="13" coveredconditionals="13" methods="11" coveredmethods="11"/>
@@ -110,10 +110,10 @@
         <line num="18" count="40" type="stmt"/>
         <line num="20" count="40" type="stmt"/>
         <line num="21" count="320" type="cond" truecount="2" falsecount="0"/>
-        <line num="22" count="227" type="stmt"/>
-        <line num="23" count="227" type="stmt"/>
-        <line num="24" count="227" type="cond" truecount="2" falsecount="0"/>
-        <line num="25" count="188" type="stmt"/>
+        <line num="22" count="249" type="stmt"/>
+        <line num="23" count="249" type="stmt"/>
+        <line num="24" count="249" type="cond" truecount="2" falsecount="0"/>
+        <line num="25" count="206" type="stmt"/>
         <line num="30" count="40" type="stmt"/>
       </file>
       <file name="Field.ts" path="C:\Users\nirie\Desktop\Dev\minesweeper\src\helpers\Field.ts">
