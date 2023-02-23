@@ -10,7 +10,7 @@ const root = ReactDOMClient.createRoot(
 root.render(
   <>
     <Top feature="Flag" firstAction="ctrl" secondAction="click">
-      Minesweeper - staging Minesweeper - trying GitHub Actions
+      Minesweeper - staging
     </Top>
     <Scoreboard
       time="000"
