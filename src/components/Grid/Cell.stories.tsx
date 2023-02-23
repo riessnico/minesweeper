@@ -1,16 +1,16 @@
 import React from 'react';
 import { Story, Meta } from '@storybook/react';
-import { Cell, CellProps } from './Cell';
+import { CellComponent, CellProps } from './Cell';
 
 export default {
   title: 'Grid/Cell',
-  component: Cell,
+  component: CellComponent,
   argTypes: {
     coods: { defaultValue: [1, 1] },
   },
 } as Meta;
 
-const Template: Story<CellProps> = (args) => <Cell {...args} />;
+const Template: Story<CellProps> = (args) => <CellComponent {...args} />;
 
 export const CellClosed = Template.bind({});
 CellClosed.args = {

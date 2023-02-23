@@ -1,15 +1,14 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<coverage generated="1663170555088" clover="3.2.0">
-  <project timestamp="1663170555088" name="All files">
-    <metrics statements="6" coveredstatements="6" conditionals="2" coveredconditionals="2" methods="3" coveredmethods="3" elements="11" coveredelements="11" complexity="0" loc="6" ncloc="6" packages="1" files="1" classes="1"/>
-    <file name="Reset.tsx" path="C:\Users\nirie\Desktop\Dev\minesweeper\src\components\Scoreboard\Reset.tsx">
-      <metrics statements="6" coveredstatements="6" conditionals="2" coveredconditionals="2" methods="3" coveredmethods="3"/>
+<coverage generated="1677120178458" clover="3.2.0">
+  <project timestamp="1677120178458" name="All files">
+    <metrics statements="5" coveredstatements="5" conditionals="0" coveredconditionals="0" methods="3" coveredmethods="3" elements="8" coveredelements="8" complexity="0" loc="5" ncloc="5" packages="1" files="1" classes="1"/>
+    <file name="useMouseDown.ts" path="C:\Users\nirie\Desktop\Dev\minesweeper\src\hooks\useMouseDown.ts">
+      <metrics statements="5" coveredstatements="5" conditionals="0" coveredconditionals="0" methods="3" coveredmethods="3"/>
       <line num="11" count="1" type="stmt"/>
-      <line num="12" count="8" type="stmt"/>
-      <line num="14" count="8" type="stmt"/>
-      <line num="15" count="8" type="stmt"/>
-      <line num="17" count="8" type="stmt"/>
-      <line num="29" count="1" type="stmt"/>
+      <line num="12" count="3" type="stmt"/>
+      <line num="14" count="3" type="stmt"/>
+      <line num="15" count="3" type="stmt"/>
+      <line num="17" count="3" type="stmt"/>
     </file>
   </project>
 </coverage>

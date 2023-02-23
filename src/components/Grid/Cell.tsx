@@ -1,6 +1,7 @@
 import styled from '@emotion/styled';
 import React from 'react';
 import { Cell as CellType, CellState, Coords } from '@/helpers/Field';
+import { useMouseDown } from '@/hooks/useMouseDown';
 
 export interface CellProps {
   /**
@@ -21,12 +22,17 @@ export interface CellProps {
   onContextMenu: (coords: Coords) => void;
 }
 
-export const Cell: React.FC<CellProps> = ({ children, coords, ...rest }) => {
-  const isActiveCell = [
-    CellState.hidden,
-    CellState.flag,
-    CellState.weakFlag,
-  ].includes(children);
+export const checkCellIsActive = (cell: CellType) =>
+  [CellState.hidden, CellState.flag, CellState.weakFlag].includes(cell);
+
+export const CellComponent: React.FC<CellProps> = ({
+  children,
+  coords,
+  ...rest
+}) => {
+  const [mouseDown, setMouseDown, setMouseUp] = useMouseDown();
+
+  const isActiveCell = checkCellIsActive(children);
 
   const onClick = () => {
     if (isActiveCell) {
@@ -34,17 +40,30 @@ export const Cell: React.FC<CellProps> = ({ children, coords, ...rest }) => {
     }
   };
 
-  const onContextMenu = (elem: React.MouseEvent<HTMLElement>) => {
+  const onContextMenu = (event: React.MouseEvent<HTMLDivElement>) => {
     /**
      * Prevent context menu
      */
-    elem.preventDefault();
+    event.preventDefault();
     if (isActiveCell) rest.onContextMenu(coords);
+  };
+
+  const onMouseDown = () => {
+    if (isActiveCell) setMouseDown();
+  };
+
+  const onMouseUp = () => {
+    if (isActiveCell) setMouseUp();
   };
 
   const props = {
     onClick,
     onContextMenu,
+    'data-testid': `${children}_${coords}`,
+    onMouseDown,
+    onMouseUp,
+    onMouseLeave: onMouseUp,
+    mouseDown,
   };
 
   return <ComponentsMap {...props}>{children}</ComponentsMap>;
@@ -52,8 +71,13 @@ export const Cell: React.FC<CellProps> = ({ children, coords, ...rest }) => {
 
 interface ComponentsMapProps {
   children: CellType;
-  onClick: (elem: React.MouseEvent<HTMLElement>) => void;
-  onContextMenu: (elem: React.MouseEvent<HTMLElement>) => void;
+  onClick: (elem: React.MouseEvent<HTMLDivElement>) => void;
+  onContextMenu: (elem: React.MouseEvent<HTMLDivElement>) => void;
+  onMouseDown: () => void;
+  onMouseUp: () => void;
+  onMouseLeave: () => void;
+  mouseDown: boolean;
+  'data-testid'?: string;
 }
 
 const ComponentsMap: React.FC<ComponentsMapProps> = ({ children, ...rest }) => {
@@ -81,11 +105,15 @@ const ComponentsMap: React.FC<ComponentsMapProps> = ({ children, ...rest }) => {
     case CellState.hidden:
       return <ClosedFrame {...rest} />;
     default:
-      return <RevealedFrame>{children}</RevealedFrame>;
+      return <RevealedFrame {...rest}>{children}</RevealedFrame>;
   }
 };
 
-const ClosedFrame = styled.div`
+interface ClosedFrameProps {
+  mouseDown: boolean;
+}
+
+const ClosedFrame = styled.div<ClosedFrameProps>`
   display: flex;
   align-items: center;
   justify-content: center;
@@ -95,7 +123,8 @@ const ClosedFrame = styled.div`
   height: 1.8vw;
   background-color: #d1d1d1;
   border: 0.6vh solid transparent;
-  border-color: white #e9e9e9 #e9e9e9 white;
+  border-color: ${({ mouseDown = false }) =>
+    mouseDown ? 'transparent' : 'white #e9e9e9 #e9e9e9 white'};
   &:hover {
     filter: brightness(1.05);
   }
