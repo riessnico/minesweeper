@@ -1,9 +1,6 @@
-import { Cell, Coords, Field } from "./Field";
+import { Cell, Coords, Field } from './Field';
 
-export const getNeighboursItems = ([y, x]: Coords): Record<
-  string,
-  Coords
-> => ({
+export const getNeighboursItems = ([y, x]: Coords): Record<string, Coords> => ({
   top: [y - 1, x],
   topRight: [y - 1, x + 1],
   right: [y, x + 1],
@@ -18,18 +15,17 @@ export const checkItemInField = ([y, x]: Coords, { length }: Field): boolean =>
   y >= 0 && x >= 0 && length - y > 0 && length - x > 0;
 
 export const incrementNeighbours = (coords: Coords, field: Field) => {
-  const items = getNeighboursItems(coords)
+  const items = getNeighboursItems(coords);
 
   for (const item of Object.values(items)) {
     if (checkItemInField(item, field)) {
       const [y, x] = item;
-      const cell = field[y][x]
+      const cell = field[y][x];
       if (cell < 8) {
         field[y][x] = (cell + 1) as Cell;
       }
     }
-
   }
 
-	return field
-}
+  return field;
+};

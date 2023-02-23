@@ -1,0 +1,250 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`Cell component check Cell renders correctly 1`] = `
+<DocumentFragment>
+  <div
+    class="css-srqhig"
+    data-testid="0_1,1"
+  />
+</DocumentFragment>
+`;
+
+exports[`Cell component check Cell renders correctly 2`] = `
+<DocumentFragment>
+  <div
+    class="css-bffs1t"
+    data-testid="1_1,1"
+  >
+    1
+  </div>
+</DocumentFragment>
+`;
+
+exports[`Cell component check Cell renders correctly 3`] = `
+<DocumentFragment>
+  <div
+    class="css-b3qosu"
+    data-testid="2_1,1"
+  >
+    2
+  </div>
+</DocumentFragment>
+`;
+
+exports[`Cell component check Cell renders correctly 4`] = `
+<DocumentFragment>
+  <div
+    class="css-1bynhd7"
+    data-testid="3_1,1"
+  >
+    3
+  </div>
+</DocumentFragment>
+`;
+
+exports[`Cell component check Cell renders correctly 5`] = `
+<DocumentFragment>
+  <div
+    class="css-1ox0h26"
+    data-testid="4_1,1"
+  >
+    4
+  </div>
+</DocumentFragment>
+`;
+
+exports[`Cell component check Cell renders correctly 6`] = `
+<DocumentFragment>
+  <div
+    class="css-p6m5uo"
+    data-testid="5_1,1"
+  >
+    5
+  </div>
+</DocumentFragment>
+`;
+
+exports[`Cell component check Cell renders correctly 7`] = `
+<DocumentFragment>
+  <div
+    class="css-1w514aa"
+    data-testid="6_1,1"
+  >
+    6
+  </div>
+</DocumentFragment>
+`;
+
+exports[`Cell component check Cell renders correctly 8`] = `
+<DocumentFragment>
+  <div
+    class="css-sxfluf"
+    data-testid="7_1,1"
+  >
+    7
+  </div>
+</DocumentFragment>
+`;
+
+exports[`Cell component check Cell renders correctly 9`] = `
+<DocumentFragment>
+  <div
+    class="css-v58ylb"
+    data-testid="8_1,1"
+  >
+    8
+  </div>
+</DocumentFragment>
+`;
+
+exports[`Cell component check Cell renders correctly 10`] = `
+<DocumentFragment>
+  <div
+    class="css-1tk1181"
+    data-testid="9_1,1"
+  >
+    <div
+      class="css-81z0jo"
+    />
+  </div>
+</DocumentFragment>
+`;
+
+exports[`Cell component check Cell renders correctly 11`] = `
+<DocumentFragment>
+  <div
+    class="css-1d1wied"
+    data-testid="10_1,1"
+  />
+</DocumentFragment>
+`;
+
+exports[`Cell component check Cell renders correctly 12`] = `
+<DocumentFragment>
+  <div
+    class="css-1d1wied"
+    data-testid="11_1,1"
+  >
+    <div
+      class="css-186ts50"
+    />
+  </div>
+</DocumentFragment>
+`;
+
+exports[`Cell component check Cell renders correctly 13`] = `
+<DocumentFragment>
+  <div
+    class="css-1d1wied"
+    data-testid="12_1,1"
+  >
+    <div
+      class="css-wx1uuw"
+    />
+  </div>
+</DocumentFragment>
+`;
+
+exports[`Cell component check Closed Frame renders correctly 1`] = `
+<DocumentFragment>
+  <div
+    class="css-bx680z"
+  />
+</DocumentFragment>
+`;
+
+exports[`Cell component check Closed Frame renders correctly 2`] = `
+<DocumentFragment>
+  <div
+    class="css-bx680z"
+  />
+</DocumentFragment>
+`;
+
+exports[`Cell component check Closed Frame renders correctly 3`] = `
+<DocumentFragment>
+  <div
+    class="css-bx680z"
+  />
+</DocumentFragment>
+`;
+
+exports[`Cell component check Closed Frame renders correctly 4`] = `
+<DocumentFragment>
+  <div
+    class="css-bx680z"
+  />
+</DocumentFragment>
+`;
+
+exports[`Cell component check Closed Frame renders correctly 5`] = `
+<DocumentFragment>
+  <div
+    class="css-bx680z"
+  />
+</DocumentFragment>
+`;
+
+exports[`Cell component check Closed Frame renders correctly 6`] = `
+<DocumentFragment>
+  <div
+    class="css-bx680z"
+  />
+</DocumentFragment>
+`;
+
+exports[`Cell component check Closed Frame renders correctly 7`] = `
+<DocumentFragment>
+  <div
+    class="css-bx680z"
+  />
+</DocumentFragment>
+`;
+
+exports[`Cell component check Closed Frame renders correctly 8`] = `
+<DocumentFragment>
+  <div
+    class="css-bx680z"
+  />
+</DocumentFragment>
+`;
+
+exports[`Cell component check Closed Frame renders correctly 9`] = `
+<DocumentFragment>
+  <div
+    class="css-bx680z"
+  />
+</DocumentFragment>
+`;
+
+exports[`Cell component check Closed Frame renders correctly 10`] = `
+<DocumentFragment>
+  <div
+    class="css-bx680z"
+  />
+</DocumentFragment>
+`;
+
+exports[`Cell component check Closed Frame renders correctly 11`] = `
+<DocumentFragment>
+  <div
+    class="css-bx680z"
+  />
+</DocumentFragment>
+`;
+
+exports[`Cell component check Closed Frame renders correctly 12`] = `
+<DocumentFragment>
+  <div
+    class="css-bx680z"
+  />
+</DocumentFragment>
+`;
+
+exports[`Cell component check Closed Frame renders correctly 13`] = `
+<DocumentFragment>
+  <div
+    class="css-bx680z"
+  />
+</DocumentFragment>
+`;

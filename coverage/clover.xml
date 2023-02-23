@@ -1,14 +1,153 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<coverage generated="1677120178458" clover="3.2.0">
-  <project timestamp="1677120178458" name="All files">
-    <metrics statements="5" coveredstatements="5" conditionals="0" coveredconditionals="0" methods="3" coveredmethods="3" elements="8" coveredelements="8" complexity="0" loc="5" ncloc="5" packages="1" files="1" classes="1"/>
-    <file name="useMouseDown.ts" path="C:\Users\nirie\Desktop\Dev\minesweeper\src\hooks\useMouseDown.ts">
-      <metrics statements="5" coveredstatements="5" conditionals="0" coveredconditionals="0" methods="3" coveredmethods="3"/>
-      <line num="11" count="1" type="stmt"/>
-      <line num="12" count="3" type="stmt"/>
-      <line num="14" count="3" type="stmt"/>
-      <line num="15" count="3" type="stmt"/>
-      <line num="17" count="3" type="stmt"/>
-    </file>
+<coverage generated="1677181707114" clover="3.2.0">
+  <project timestamp="1677181707114" name="All files">
+    <metrics statements="96" coveredstatements="96" conditionals="30" coveredconditionals="30" methods="27" coveredmethods="27" elements="153" coveredelements="153" complexity="0" loc="96" ncloc="96" packages="5" files="12" classes="12"/>
+    <package name="components.Grid">
+      <metrics statements="36" coveredstatements="36" conditionals="13" coveredconditionals="13" methods="11" coveredmethods="11"/>
+      <file name="Cell.tsx" path="C:\Users\nirie\Desktop\Dev\minesweeper\src\components\Grid\Cell.tsx">
+        <metrics statements="30" coveredstatements="30" conditionals="13" coveredconditionals="13" methods="7" coveredmethods="7"/>
+        <line num="25" count="2" type="stmt"/>
+        <line num="26" count="39" type="stmt"/>
+        <line num="28" count="2" type="stmt"/>
+        <line num="33" count="183" type="stmt"/>
+        <line num="35" count="183" type="stmt"/>
+        <line num="37" count="183" type="stmt"/>
+        <line num="41" count="26" type="stmt"/>
+        <line num="43" count="26" type="cond" truecount="2" falsecount="0"/>
+        <line num="44" count="6" type="stmt"/>
+        <line num="48" count="183" type="stmt"/>
+        <line num="58" count="183" type="stmt"/>
+        <line num="72" count="2" type="stmt"/>
+        <line num="73" count="183" type="stmt"/>
+        <line num="78" count="183" type="cond" truecount="6" falsecount="0"/>
+        <line num="80" count="33" type="stmt"/>
+        <line num="82" count="20" type="stmt"/>
+        <line num="88" count="3" type="stmt"/>
+        <line num="94" count="3" type="stmt"/>
+        <line num="100" count="12" type="stmt"/>
+        <line num="102" count="112" type="stmt"/>
+        <line num="110" count="2" type="stmt"/>
+        <line num="121" count="196" type="cond" truecount="2" falsecount="0"/>
+        <line num="127" count="2" type="stmt"/>
+        <line num="128" count="2" type="stmt"/>
+        <line num="144" count="2" type="stmt"/>
+        <line num="147" count="165" type="cond" truecount="2" falsecount="0"/>
+        <line num="153" count="2" type="stmt"/>
+        <line num="160" count="2" type="stmt"/>
+        <line num="164" count="2" type="stmt"/>
+        <line num="172" count="2" type="stmt"/>
+      </file>
+      <file name="Grid.tsx" path="C:\Users\nirie\Desktop\Dev\minesweeper\src\components\Grid\Grid.tsx">
+        <metrics statements="6" coveredstatements="6" conditionals="0" coveredconditionals="0" methods="4" coveredmethods="4"/>
+        <line num="22" count="1" type="stmt"/>
+        <line num="23" count="1" type="stmt"/>
+        <line num="25" count="12" type="stmt"/>
+        <line num="26" count="144" type="stmt"/>
+        <line num="38" count="1" type="stmt"/>
+        <line num="40" count="1" type="stmt"/>
+      </file>
+    </package>
+    <package name="components.Scoreboard">
+      <metrics statements="15" coveredstatements="15" conditionals="2" coveredconditionals="2" methods="5" coveredmethods="5"/>
+      <file name="Counter.tsx" path="C:\Users\nirie\Desktop\Dev\minesweeper\src\components\Scoreboard\Counter.tsx">
+        <metrics statements="3" coveredstatements="3" conditionals="0" coveredconditionals="0" methods="1" coveredmethods="1"/>
+        <line num="11" count="2" type="stmt"/>
+        <line num="12" count="3" type="stmt"/>
+        <line num="15" count="2" type="stmt"/>
+      </file>
+      <file name="Level.tsx" path="C:\Users\nirie\Desktop\Dev\minesweeper\src\components\Scoreboard\Level.tsx">
+        <metrics statements="5" coveredstatements="5" conditionals="0" coveredconditionals="0" methods="2" coveredmethods="2"/>
+        <line num="11" count="2" type="stmt"/>
+        <line num="12" count="2" type="stmt"/>
+        <line num="14" count="6" type="stmt"/>
+        <line num="21" count="2" type="stmt"/>
+        <line num="29" count="2" type="stmt"/>
+      </file>
+      <file name="Reset.tsx" path="C:\Users\nirie\Desktop\Dev\minesweeper\src\components\Scoreboard\Reset.tsx">
+        <metrics statements="4" coveredstatements="4" conditionals="2" coveredconditionals="2" methods="1" coveredmethods="1"/>
+        <line num="12" count="2" type="stmt"/>
+        <line num="13" count="10" type="stmt"/>
+        <line num="15" count="10" type="stmt"/>
+        <line num="27" count="2" type="stmt"/>
+      </file>
+      <file name="Scoreboard.tsx" path="C:\Users\nirie\Desktop\Dev\minesweeper\src\components\Scoreboard\Scoreboard.tsx">
+        <metrics statements="3" coveredstatements="3" conditionals="0" coveredconditionals="0" methods="1" coveredmethods="1"/>
+        <line num="27" count="1" type="stmt"/>
+        <line num="33" count="1" type="stmt"/>
+        <line num="41" count="1" type="stmt"/>
+      </file>
+    </package>
+    <package name="components.Top">
+      <metrics statements="10" coveredstatements="10" conditionals="0" coveredconditionals="0" methods="2" coveredmethods="2"/>
+      <file name="GameName.tsx" path="C:\Users\nirie\Desktop\Dev\minesweeper\src\components\Top\GameName.tsx">
+        <metrics statements="1" coveredstatements="1" conditionals="0" coveredconditionals="0" methods="0" coveredmethods="0"/>
+        <line num="10" count="2" type="stmt"/>
+      </file>
+      <file name="Legend.tsx" path="C:\Users\nirie\Desktop\Dev\minesweeper\src\components\Top\Legend.tsx">
+        <metrics statements="6" coveredstatements="6" conditionals="0" coveredconditionals="0" methods="1" coveredmethods="1"/>
+        <line num="19" count="2" type="stmt"/>
+        <line num="24" count="2" type="stmt"/>
+        <line num="35" count="2" type="stmt"/>
+        <line num="39" count="2" type="stmt"/>
+        <line num="45" count="2" type="stmt"/>
+        <line num="49" count="2" type="stmt"/>
+      </file>
+      <file name="Top.tsx" path="C:\Users\nirie\Desktop\Dev\minesweeper\src\components\Top\Top.tsx">
+        <metrics statements="3" coveredstatements="3" conditionals="0" coveredconditionals="0" methods="1" coveredmethods="1"/>
+        <line num="8" count="1" type="stmt"/>
+        <line num="12" count="1" type="stmt"/>
+        <line num="18" count="1" type="stmt"/>
+      </file>
+    </package>
+    <package name="helpers">
+      <metrics statements="29" coveredstatements="29" conditionals="15" coveredconditionals="15" methods="6" coveredmethods="6"/>
+      <file name="CellsManipulator.ts" path="C:\Users\nirie\Desktop\Dev\minesweeper\src\helpers\CellsManipulator.ts">
+        <metrics statements="12" coveredstatements="12" conditionals="8" coveredconditionals="8" methods="3" coveredmethods="3"/>
+        <line num="3" count="42" type="stmt"/>
+        <line num="14" count="4" type="stmt"/>
+        <line num="15" count="327" type="cond" truecount="4" falsecount="0"/>
+        <line num="17" count="4" type="stmt"/>
+        <line num="18" count="40" type="stmt"/>
+        <line num="20" count="40" type="stmt"/>
+        <line num="21" count="320" type="cond" truecount="2" falsecount="0"/>
+        <line num="22" count="239" type="stmt"/>
+        <line num="23" count="239" type="stmt"/>
+        <line num="24" count="239" type="cond" truecount="2" falsecount="0"/>
+        <line num="25" count="205" type="stmt"/>
+        <line num="30" count="40" type="stmt"/>
+      </file>
+      <file name="Field.ts" path="C:\Users\nirie\Desktop\Dev\minesweeper\src\helpers\Field.ts">
+        <metrics statements="17" coveredstatements="17" conditionals="7" coveredconditionals="7" methods="3" coveredmethods="3"/>
+        <line num="7" count="4" type="stmt"/>
+        <line num="15" count="4" type="stmt"/>
+        <line num="18" count="31" type="stmt"/>
+        <line num="20" count="4" type="stmt"/>
+        <line num="21" count="8" type="cond" truecount="4" falsecount="0"/>
+        <line num="22" count="2" type="stmt"/>
+        <line num="25" count="6" type="stmt"/>
+        <line num="26" count="6" type="stmt"/>
+        <line num="28" count="6" type="stmt"/>
+        <line num="30" count="6" type="stmt"/>
+        <line num="31" count="26" type="stmt"/>
+        <line num="32" count="210" type="cond" truecount="2" falsecount="0"/>
+        <line num="33" count="32" type="stmt"/>
+        <line num="34" count="32" type="stmt"/>
+        <line num="35" count="32" type="stmt"/>
+        <line num="37" count="210" type="stmt"/>
+        <line num="41" count="6" type="stmt"/>
+      </file>
+    </package>
+    <package name="hooks">
+      <metrics statements="6" coveredstatements="6" conditionals="0" coveredconditionals="0" methods="3" coveredmethods="3"/>
+      <file name="useMouseDown.ts" path="C:\Users\nirie\Desktop\Dev\minesweeper\src\hooks\useMouseDown.ts">
+        <metrics statements="6" coveredstatements="6" conditionals="0" coveredconditionals="0" methods="3" coveredmethods="3"/>
+        <line num="11" count="5" type="stmt"/>
+        <line num="12" count="196" type="stmt"/>
+        <line num="14" count="196" type="stmt"/>
+        <line num="16" count="196" type="stmt"/>
+        <line num="17" count="196" type="stmt"/>
+        <line num="19" count="196" type="stmt"/>
+      </file>
+    </package>
   </project>
 </coverage>

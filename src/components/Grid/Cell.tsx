@@ -30,30 +30,19 @@ export const CellComponent: React.FC<CellProps> = ({
   coords,
   ...rest
 }) => {
-  const [mouseDown, setMouseDown, setMouseUp] = useMouseDown();
+  const [mouseDown, onMouseDown, onMouseUp] = useMouseDown();
 
-  const isActiveCell = checkCellIsActive(children);
+  const onClick = () => rest.onClick(coords);
 
-  const onClick = () => {
-    if (isActiveCell) {
-      rest.onClick(coords);
-    }
-  };
-
-  const onContextMenu = (event: React.MouseEvent<HTMLDivElement>) => {
+  const onContextMenu = (elem: React.MouseEvent<HTMLElement>) => {
     /**
-     * Prevent context menu
+     * Prevent context menu by default
      */
-    event.preventDefault();
-    if (isActiveCell) rest.onContextMenu(coords);
-  };
+    elem.preventDefault();
 
-  const onMouseDown = () => {
-    if (isActiveCell) setMouseDown();
-  };
-
-  const onMouseUp = () => {
-    if (isActiveCell) setMouseUp();
+    if (checkCellIsActive(children)) {
+      rest.onContextMenu(coords);
+    }
   };
 
   const props = {
@@ -81,12 +70,17 @@ interface ComponentsMapProps {
 }
 
 const ComponentsMap: React.FC<ComponentsMapProps> = ({ children, ...rest }) => {
+  const nonActiveCellProps = {
+    onContextMenu: rest.onContextMenu,
+    'data-testid': rest['data-testid'],
+  };
+
   switch (children) {
     case CellState.empty:
-      return <RevealedFrame {...rest} />;
+      return <RevealedFrame {...nonActiveCellProps} />;
     case CellState.bomb:
       return (
-        <BombFrame {...rest}>
+        <BombFrame {...nonActiveCellProps}>
           <Bomb />
         </BombFrame>
       );
@@ -105,15 +99,15 @@ const ComponentsMap: React.FC<ComponentsMapProps> = ({ children, ...rest }) => {
     case CellState.hidden:
       return <ClosedFrame {...rest} />;
     default:
-      return <RevealedFrame {...rest}>{children}</RevealedFrame>;
+      return <RevealedFrame {...nonActiveCellProps}>{children}</RevealedFrame>;
   }
 };
 
 interface ClosedFrameProps {
-  mouseDown: boolean;
+  mouseDown?: boolean;
 }
 
-const ClosedFrame = styled.div<ClosedFrameProps>`
+export const ClosedFrame = styled.div<ClosedFrameProps>`
   display: flex;
   align-items: center;
   justify-content: center;

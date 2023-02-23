@@ -8,6 +8,14 @@ describe('Reset button check', () => {
     <Reset onReset={() => null} />
   );
 
+  it('Reset renders correctly', () => {
+    const onReset = jest.fn();
+
+    const { asFragment } = render(<Reset onReset={onReset} />);
+
+    expect(asFragment()).toMatchSnapshot();
+  });
+
   it('should render elemens with default state', () => {
     render(<ResetWithDummyHandlerOnReset />);
 

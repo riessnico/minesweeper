@@ -53,14 +53,14 @@ describe('Field Generator', () => {
       ]);
     });
     it('2x2 field 50% density', () => {
-      const field = fieldGenerator(2, 0.5)
-      const flatField = field.flat()
+      const field = fieldGenerator(2, 0.5);
+      const flatField = field.flat();
 
-      const cellsWithBombs = flatField.filter(cellWithBombFilter)
-      const emptyCells = flatField.filter((cell) => cell === 2)
-      
-      expect(cellsWithBombs).toHaveLength(2)
-      expect(emptyCells).toHaveLength(2)
+      const cellsWithBombs = flatField.filter(cellWithBombFilter);
+      const emptyCells = flatField.filter((cell) => cell === 2);
+
+      expect(cellsWithBombs).toHaveLength(2);
+      expect(emptyCells).toHaveLength(2);
     });
     it('Real game field size = 10x10 with 1/4 mined cells (25 mines)', () => {
       const size = 10;
@@ -71,9 +71,9 @@ describe('Field Generator', () => {
 
       const flatField = field.flat();
 
-      // expect([...field[0], ...field[1]].join('')).not.toBe(
-      //   '99999999999999999999',
-      // );
+      expect([...field[0], ...field[1]].join('')).not.toBe(
+        '99999999999999999999',
+      );
 
       expect(flatField.filter(cellWithBombFilter)).toHaveLength(mines);
     });
