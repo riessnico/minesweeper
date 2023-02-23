@@ -11,10 +11,11 @@
     "start": "webpack serve --mode=development",
     "test": "jest --passWithNoTests --no-cache --runInBand",
     "test:watch": "yarn test -- --watch",
+    "test:mutate": "stryker run",
     "storybook": "start-storybook -p 6006",
     "build-storybook": "build-storybook",
     "lint": "npx eslint ./ --ext .js,.jsx,.ts,.tsx -- ignore-path .gitignore --fix",
-    "chromatic": "npx chromatic --project-token=6e189bac8b6e",
+    "chromatic": "npx chromatic",
     "prepare": "husky install"
   },
   "repository": {
