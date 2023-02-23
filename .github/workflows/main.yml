@@ -26,6 +26,10 @@ jobs:
         with:
           fetch-depth: 0
 
+      # install deps
+      - name: Deps
+        run: yarn
+
       # Run project test
       - name: Tests
         run: yarn test
